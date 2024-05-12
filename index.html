@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="fi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Erik Tatti - Henkilökohtainen Verkkosivu</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div id="navigation">
+        <button onclick="showWelcome()">Tervetuloa</button>
+        <button onclick="showAbout()">Tietoa minusta</button>
+        <button onclick="showPortfolio()">Portfolioni</button>
+        <button onclick="showContact()">Ota yhteyttä</button>
+    </div>
+    <style>
+        nav ul {
+            display: none;
+        }
+    </style>
+
+    <div id="content">
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="#" onclick="showWelcome()">Tervetuloa</a></li>
+                    <li><a href="#" onclick="showAbout()">Tietoa minusta</a></li>
+                    <li><a href="#" onclick="showPortfolio()">Portfolioni</a></li>
+                    <li><a href="#" onclick="showContact()">Ota yhteyttä</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main id="main-content">
+
+            <div id="welcome-page" style="text-align: center;">
+                <h1>Tervetuloa</h1>
+                <h4>Tervetuloa verkkosivulleni!
+                    Täältä löydät minun portfolion ja tietoa minusta.
+                    Ota yhteyttä sivulta löytyvät yhteystietoni,
+                    mikäli haluat ottaa minuun yhteyttä. </h4>
+                <img src="917828FB-4807-4AE5-8FB5-8E93518CB0B6.JPG" height="400">
+            </div>
+            <div id="about-page" style="display: none">
+                <h1>Tietoa minusta</h1>
+                <h2>Kuka on Erik? </h2>
+                <div class="row">
+                    <img src="9d344eac-34b2-4900-a608-d4bebf55ba71.JPG" height="400"
+                        style="float: right; margin-left: 20px;">
+                    <div class="text-container">
+                        <p>Olen 21-vuotias töissä käyvä opiskelija.
+                            Suoritan IT-tradenomin tutkintoa Haaga-Helian ammattikorkeakoulussa.
+                            Suoritan tutkintoa monimuotototeutuksena, joka mahdollistaa sen, että voin tehdä
+                            täyspäiväsesti
+                            töitä opintojen ohella.
+                            Hain tutkintoon tietämättä siitä mitään, koska kaverini kehui sitä, mutta satuinkin
+                            tykkäämään
+                            siitä
+                            todella paljon ajattelin.
+                            Työskentelen lentokentällä DHL:n varastolla, jossa toimin tiiminvetäjänä.
+                            Työssäni tykkään sen vaihtelevuudesta, yhtenä päivänä saatan olla koulutuksessa ja
+                            seuraavana
+                            vetämässä osastoa. </p>
+                    </div>
+                </div>
+
+                <h2>Arkeni</h2>
+                <p>Asun Helsingissä Pasilassa hyvin kiireistä arkea.
+                    Päiväni koostuvat töissä käymisestä, opiskelusta ja pienestä vapaa-ajasta.
+                    Pieni vapaa-aika kuulostaa dramaattiselta, ehdin oikeasti tekemään monia asioita ja harrastuksia.
+                    Yleensä näen kavereita ja ulkoilen lisäksi minulla, on monia mielenkiinnon kohteita.</p>
+                <h2>Mielenkiinnon kohteet</h2>
+                <p>Harrastan kuntosalilla käyntiä, pyöräilyä ja musiikin kuuntelua.
+                    Kyllä musiikkia voi harrastaa ainakin mielestäni.
+                    Minulla on tapana innostua asioista helposti, joka johtaa siihen, että perehdyn tiettyihin asioihin
+                    supertarkasti.
+                    Musiikki on yksi näistä, tykkään perehtyä eri artistien diskografiaan ja ottaa selvää eri
+                    kappaleiden sanotuksista.
+                    Muita asioita mistä tykkään, on autourheilu ja muoti, joista tiedän asian tai pari.</p>
+                <h2>Kiteytettynä</h2>
+                <p>Tekemistä riittää ja sanoisin, että minulla on hyvin tapahtumarikas elämä.
+                    Pyrin oppimaan ja kehittymään mahdollisimman paljon päivä kerralla, samalla pitämällä hauskaa.</p>
+                <img src="371B132C-916B-4F89-B2B8-7448816D8F13.JPG" height="400">
+
+            </div>
+            <div id="portfolio-page" style="display: none;">
+                <h1>Portfolioni</h1>
+                <h2>Tällä sivulla näet minun saavutukset ja työt</h2><br>
+                <h4>DHL varasto<h4>
+                        <p>(2020 kesä), (2021 toukokuu-joulukuu), (2023 tammikuu-nykyhetki)
+                        </p>
+                        <p>Laaja osaaminen työntekijöiden kouluttamisesta ja työelämässä johtamisesta.</p><br>
+
+                        <h4>Reserviupseerikurssin johtajakoulutus<br></h4>
+                        <p>(2023)</p>
+                        <p>Kattava johtajakoulutus, aliupseerikurssin kouluttajana toimiminen.
+                        <p><br>
+                        <h4>Örum autonosavarasto</h4>
+                        <p>(2018 kesä -2019 vuoden loppu)</p>
+                        <p>Tilausten keruu ja lähettäminen</p><br>
+                        <h4>Haaga-Helia IT-tradenomi tutkinto</h4>
+                        <p>(2024 tammikuu-nykyhetki)</p><br>
+                        <h4>Vaskivuoren Lukio ylioppilas</h4>
+                        <p>(2021 valmistunut)</p>
+            </div>
+
+
+            <div id="contact-page" style="display: none;">
+                <h1>Yhteystiedot</h1>
+                <h4>Sähköposti</h4>
+                <p>kireittat@gmail.com</p>
+                <h4>puhelinnumero</h4>
+                <p>0456634300</p>
+
+            </div>
+        </main>
+    </div>
+
+    <footer>
+
+    </footer>
+
+    <script>
+        window.onload = function () {
+            showWelcome();
+        };
+
+        function showWelcome() {
+            hideAllPages();
+            document.getElementById('welcome-page').style.display = 'block';
+        }
+
+        function showAbout() {
+            hideAllPages();
+            document.getElementById('about-page').style.display = 'flex';
+        }
+
+        function showPortfolio() {
+            hideAllPages();
+            document.getElementById('portfolio-page').style.display = 'block';
+        }
+
+        function showContact() {
+            hideAllPages();
+            document.getElementById('contact-page').style.display = 'block';
+        }
+
+        function hideAllPages() {
+            var pages = document.querySelectorAll('#main-content > div');
+            for (var i = 0; i < pages.length; i++) {
+                pages[i].style.display = 'none';
+            }
+        }
+    </script>
+</body>
+
+</html>
